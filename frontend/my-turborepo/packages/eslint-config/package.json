@@ -20,5 +20,9 @@
     "globals": "^16.5.0",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }

@@ -6,6 +6,7 @@ const nextConfig = {
     config.plugins.push(
       new NextFederationPlugin({
         name: "storefront",
+        filename: "static/chunks/remoteEntry.js",
         remotes: {
           productMfe:
             "productMfe@http://localhost:3001/_next/static/chunks/remoteEntry.js",

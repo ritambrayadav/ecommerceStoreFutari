@@ -8,7 +8,7 @@ const nextConfig = {
         name: "productMfe",
         filename: "static/chunks/remoteEntry.js",
         exposes: {
-          "./ProductPage": "./src/app/page.tsx",
+          "./ProductPage": "./pages/index.tsx",
         },
       })
     );
