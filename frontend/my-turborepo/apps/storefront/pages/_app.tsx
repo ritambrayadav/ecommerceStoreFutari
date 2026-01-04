@@ -1,6 +1,10 @@
 import type { AppProps } from "next/app";
-import "./globals.css";
+import { AppLayout } from "@repo/ui";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <AppLayout>
+      <Component {...pageProps} />
+    </AppLayout>
+  );
 }
