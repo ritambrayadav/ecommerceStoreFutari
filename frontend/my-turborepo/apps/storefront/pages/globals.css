@@ -4,7 +4,7 @@
 
 
 :root {
-  --background: #ffffff;
+  --background: #F5F1E7;
   --foreground: #171717;
 }
 
@@ -19,6 +19,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  margin: 0px;
 }
 
 body {
