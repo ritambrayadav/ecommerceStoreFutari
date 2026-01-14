@@ -1,0 +1,12 @@
+.button {
+  max-width: 100px;
+  padding: 0.5rem 10px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}

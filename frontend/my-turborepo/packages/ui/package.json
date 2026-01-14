@@ -3,14 +3,13 @@
   "version": "0.0.0",
   "private": true,
 
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
 
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
     }
   },
 
@@ -20,8 +19,6 @@
   },
 
   "scripts": {
-    "build": "tsc -p tsconfig.json && copyfiles -u 1 \"src/**/*.{css,png,svg}\" dist",
-    "dev": "tsc -w",
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
@@ -32,7 +29,6 @@
     "@types/node": "^22.15.3",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "copyfiles": "^2.4.1",
     "typescript": "5.9.2"
   }
 }

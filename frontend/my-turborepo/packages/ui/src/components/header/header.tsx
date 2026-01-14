@@ -10,13 +10,11 @@ export function Header() {
         <div className="left">
           <Logo />
         </div>
-
         <div className="right">
           <Nav />
-
           <div className="auth">
-            <Button className="btnGhost" appName="Futari Store">Sign in</Button>
-            <Button className="btnPrimary" appName="Futari Store">Log in</Button>
+            <Button className="btnGhost" onClick={() => alert("Sign In clicked")}>Sign In</Button>
+            <Button className="btnPrimary" onClick={() => alert("Login Now clicked")}>Login Now</Button>
           </div>
         </div>
       </div>
