@@ -1,10 +1,16 @@
-import React from "react";
+import "./nav.css";
+import { ReactNode } from "react";
+import { Icons } from "../../icons";
 
-export function Nav({ items }: { items?: { href: string; label: string }[] }) {
+export function Nav({
+  items,
+}: {
+  items?: { href: string; label: string | ReactNode }[];
+}) {
   const links = items ?? [
-    { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
-    { href: "/cart", label: "Cart" },
+    { href: "/", label: "Categories" },
+    { href: "/wish-list", label: <Icons.Wishlist /> },
+    { href: "/cart", label: <Icons.Cart /> },
   ];
 
   return (

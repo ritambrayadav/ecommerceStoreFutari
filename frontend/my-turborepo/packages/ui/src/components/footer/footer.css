@@ -1,0 +1,28 @@
+/* Footer Component Styles */
+.footer {
+  width: 100%;
+  border-top: 1px solid currentColor;
+  padding: 1rem 1.5rem;
+  /* allow the footer to be pushed to the bottom when used inside a column flex container */
+  margin-top: auto;
+  box-sizing: border-box;
+  /* match header background */
+  background-color: #DCCDAE;
+  /* fixed to viewport bottom so footer remains visible */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 40;
+  /* limit height and make scrollable when content is large */
+  max-height: 220px;
+  overflow: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

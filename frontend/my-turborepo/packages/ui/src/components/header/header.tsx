@@ -2,13 +2,22 @@ import "./header.css";
 import { Logo } from "../logo";
 import { Nav } from "../nav";
 import { Button } from "../button";
+import { Input } from "../input";
 
 export function Header() {
-  return (
+  return ( 
     <header className="header">
       <div className="container">
         <div className="left">
           <Logo />
+          <div className="search">
+            <Input
+              className="searchInput"
+              type="search"
+              placeholder="Search products..."
+              aria-label="Search products"
+            />
+          </div>
         </div>
         <div className="right">
           <Nav />

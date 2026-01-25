@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #F5F1E7;
   --foreground: #171717;
+  --footer-height: 220px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,15 +14,18 @@
 }
 
 html,
-body {
+body,
+#__next {
+  height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
-  margin: 0px;
+  margin: 0;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  padding-bottom: var(--footer-height);
 }
 
 * {

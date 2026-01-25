@@ -1,0 +1,14 @@
+.ui-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  background: white;
+  width: 20rem;
+  max-width: 40vw;
+  font-size: 0.95rem;
+}
+
+.ui-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(214,183,111,0.15);
+}
